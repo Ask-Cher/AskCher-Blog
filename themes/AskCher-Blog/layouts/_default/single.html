@@ -1,0 +1,93 @@
+{{- define "main" -}}
+    
+    <header class="post-header">
+        <div class="post-header-content">
+            <nav class="post-breadcrumb">
+                <a href="{{ .Site.BaseURL }}">Home</a>
+                <span>/</span>
+                <a href="{{ "posts/" | relURL }}">Blog</a>
+                <span>/</span>
+                {{- range .Params.categories -}}
+                <a href="{{ "categories/" | relURL }}{{ . | urlize }}">
+                    {{ . }}
+                </a>
+                <span>/</span>
+                {{- end -}}
+                <span>{{ .Title }}</span>
+            </nav>
+
+            <h1 class="post-title">{{ .Title }}</h1>
+            
+            <p class="post-excerpt">{{ .Description | default .Summary }}</p>
+
+            <div class="post-meta-header">
+                <div class="post-author">
+                    <div class="author-avatar">CR</div>
+                    <div>
+                        <div>{{ .Params.author }}</div>
+                        <div class="post-meta-item">
+                            <i class="fas fa-calendar"></i>
+                            {{ .Date.Format "January 2, 2006" }}
+                        </div>
+                    </div>
+                </div>
+                <div class="post-meta-item">
+                    <i class="fas fa-clock"></i>
+                    {{ .ReadingTime }} min read
+                </div>
+            </div>
+
+            <div class="post-tags">
+                {{- range .Params.tags -}}
+                <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="post-tag">{{ . }}</a>
+                {{- end -}}
+            </div>
+        </div>
+    </header>
+    <div class="page-container">
+
+        <main class="post-main">
+            <div class="post-container">
+                <article class="post-content">
+                    {{ .Content }}
+                </article>
+            </div>
+        </main>
+    
+        {{ partial "toc.html" . }}
+    
+    </div>
+
+    <section class="share-section">
+        <div class="share-container">
+            <h3 class="share-title">Share this Article</h3>
+            <div class="share-buttons">
+                <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" class="share-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                    Tweet
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" class="share-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    Share
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}" class="share-btn linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    Share
+                </a>
+                <a href="mailto:?subject={{ .Title }}&body=Check out this article: {{ .Permalink }}" class="share-btn email">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="comments-section">
+        <div class="comments-container">
+            </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        </section>
+
+{{- end -}}

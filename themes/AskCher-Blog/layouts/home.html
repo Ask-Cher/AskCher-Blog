@@ -1,0 +1,122 @@
+{{- define "main" -}}
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Welcome to<br><span class="highlight">{{ .Site.Title }}</span></h1>
+                <p class="hero-subtitle">
+                    {{ .Site.Params.description }}
+                </p>
+                <div class="hero-cta">
+                    <a href="{{ "posts/" | relURL }}" class="cta-primary">Explore Posts</a>
+                    <a href="#recent-posts" class="cta-secondary">Latest Articles</a>
+                </div>
+                
+                <div class="category-cards">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Teaching Methods</h3>
+                        <p>Explore innovative teaching strategies and methodologies for modern classrooms</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>EdTech Solutions</h3>
+                        <p>Discover the latest educational technology tools and digital learning platforms</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Learning Science</h3>
+                        <p>Understand how students learn and apply cognitive science to education</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="featured-container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Post</h2>
+                <p class="section-subtitle">Our latest insights on education and learning</p>
+            </div>
+            
+            {{- with (index (where .Site.RegularPages "Type" "posts") 0) -}}
+            <article class="featured-post">
+                <div class="featured-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="category">{{ index .Params.categories 0 }}</span>
+                        <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+                    </div>
+                    <h2>{{ .Title }}</h2>
+                    <p class="excerpt">{{ .Summary }}</p>  <a href="{{ .Permalink }}" class="read-more-btn">
+                        Read Full Article
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            {{- end -}}
+        </div>
+    </section>
+
+    <section class="recent-posts" id="recent-posts">
+        <div class="recent-container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Posts</h2>
+                <a href="{{ "posts/" | relURL }}" class="view-all-btn">View All Posts</a>
+            </div>
+            
+            <div class="posts-grid">
+                {{- range first 3 (where .Site.RegularPages "Type" "posts") -}}
+                <article class="post-card">
+                    <div class="post-image">
+                        <i class="fas fa-microscope"></i>
+                        <div class="post-category">{{ index .Params.categories 0 }}</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="date"><i class="fas fa-calendar"></i> {{ .Date.Format "Jan 2, 2006" }}</span>
+                            <span class="read-time"><i class="fas fa-clock"></i> {{ .ReadingTime }} min read</span>
+                        </div>
+                        <h3>{{ .Title }}</h3>
+                        <p class="excerpt">{{ .Summary }}</p>
+                        <a href="{{ .Permalink }}" class="post-link">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                {{- end -}}
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest educational insights and resources delivered to your inbox weekly.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required id="email-input">
+                        <button type="submit">Stay Updated</button>
+                    </div>
+                    <p class="form-note">No spam, unsubscribe at any time.</p>
+                </form>
+            </div>
+            <div class="newsletter-visual">
+                <div class="visual-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+{{- end -}}

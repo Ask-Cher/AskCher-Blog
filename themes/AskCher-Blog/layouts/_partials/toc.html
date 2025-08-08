@@ -1,0 +1,14 @@
+<div class="toc-wrapper">
+  <nav class="table-of-contents">
+      <h4 class="toc-title">
+          <i class="fas fa-list"></i>
+          Table of Contents
+      </h4>
+      
+      {{ with .TableOfContents }}
+      <ul class="toc-list">
+          {{ . }}
+      </ul>
+      {{ end }}
+  </nav>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parenting on AskCher</title>
+    <link>//localhost:1313/tags/parenting/</link>
+    <description>Recent content in Parenting on AskCher</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/parenting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beyond Grades: Nurturing Discipline and Focus in your Child</title>
+      <link>//localhost:1313/posts/post-1/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>//localhost:1313/posts/post-1/</guid>
+      <description>Discover why discipline and focus are more important than ever for primary school children. This article offers practical, evidence-based strategies for parents to cultivate these crucial life skills.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="{{ .Site.BaseURL }}" class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            AskCher
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+                <a href="{{ .Site.BaseURL }}" class="nav-link {{ if .IsHome }}active{{ end }}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ "posts/" | relURL }}" class="nav-link">
+                    Blog
+                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                </a>
+                <div class="dropdown">
+                    <a href="{{ "posts/categories/parents/" | relURL }}" class="dropdown-item">
+                        <i class="fas fa-users"></i>
+                        For Parents
+                    </a>
+                    <a href="{{ "posts/categories/study-guides/" | relURL }}" class="dropdown-item">
+                        <i class="fas fa-book-open"></i>
+                        Study Guides for Students
+                    </a>
+                    <a href="{{ "posts/categories/teaching-methods/" | relURL }}" class="dropdown-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        Teaching Methods
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="{{ "about/" | relURL }}" class="nav-link">About</a>
+            </li>
+            <li>
+                <a href="#newsletter" class="subscribe-btn">Stay Updated</a>
+            </li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>

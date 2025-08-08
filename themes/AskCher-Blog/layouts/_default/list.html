@@ -1,0 +1,16 @@
+{{- define "main" -}}
+    <section class="recent-posts">
+        <div class="recent-container">
+            <div class="section-header">
+                <h1 class="section-title">All Posts</h1>
+            </div>
+            
+            <div class="posts-grid">
+                {{- range .Pages -}}
+                <article class="post-card">
+                    </article>
+                {{- end -}}
+            </div>
+        </div>
+    </section>
+{{- end -}}

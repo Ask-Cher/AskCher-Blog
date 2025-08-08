@@ -1,0 +1,40 @@
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AskCher</h3>
+                <p>Empowering education through innovative content and research-backed strategies.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="{{ "posts/" | relURL }}">All Posts</a></li>
+                    <li><a href="{{ "posts/categories/parents/" | relURL }}">For Parents</a></li>
+                    <li><a href="{{ "posts/categories/study-guides/" | relURL }}">Study Guides</a></li>
+                    <li><a href="{{ "about/" | relURL }}">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> hello@askcher.com</li>
+                    <li><i class="fas fa-phone"></i> +65 1234 5678</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Singapore</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} AskCher. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="{{ "privacy/" | relURL }}">Privacy Policy</a>
+                <a href="{{ "terms/" | relURL }}">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
