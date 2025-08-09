@@ -4,7 +4,7 @@ date: 2025-01-15T00:00:00+08:00
 description: "Discover practical strategies and the latest guidelines to help you cultivate healthy digital habits and responsible screen use for your primary school child."
 summary: "Discover practical strategies and the latest guidelines to help you cultivate healthy digital habits and responsible screen use for your primary school child."
 author: "Cheng Ren Teo"
-canonicalURL: "https://askcher.com/posts/smart-screen-healthy-habits"
+canonicalURL: "https://ask-cher-blog.vercel.app/posts/smart-screen-healthy-habits"
 images: [] # Optional: Add a featured image path here
 categories:
   - "For Parents"

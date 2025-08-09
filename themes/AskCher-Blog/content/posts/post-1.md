@@ -4,7 +4,7 @@ date: 2025-01-15T00:00:00+08:00
 description: "Discover why discipline and focus are more important than ever for primary school children. This article offers practical, evidence-based strategies for parents to cultivate these crucial life skills."
 summary: "Discover why discipline and focus are more important than ever for primary school children. This article offers practical, evidence-based strategies for parents to cultivate these crucial life skills."
 author: "Cheng Ren Teo"
-canonicalURL: "https://askcher.com/posts/2025/01-january/beyond-grades-nurturing-discipline/"
+canonicalURL: "https://ask-cher-blog.vercel.app/beyond-grades-nurturing-discipline/"
 images: [] # Optional: Add a featured image path here
 categories:
   - "For Parents"
