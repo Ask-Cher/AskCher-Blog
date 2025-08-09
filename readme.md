@@ -32,7 +32,7 @@ This is for css and js assets. Any file you place here is copied directly to the
 The site's main configuration file. This file contains global settings like your site's title, base URL, and other parameters.
 
 # How to Write a Blog Post
-Creating a new blog post is easy. You will only need to work within the content/ directory.
+Creating a new blog post is easy. You will only need to work within the theme/content/ directory.
 
 ## Step 1: Create a New File
 
