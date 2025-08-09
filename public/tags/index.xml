@@ -16,10 +16,24 @@
       <description></description>
     </item>
     <item>
+      <title>Digital-Habits</title>
+      <link>//localhost:1313/tags/digital-habits/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>//localhost:1313/tags/digital-habits/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Discipline</title>
       <link>//localhost:1313/tags/discipline/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
       <guid>//localhost:1313/tags/discipline/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Edtech</title>
+      <link>//localhost:1313/tags/edtech/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>//localhost:1313/tags/edtech/</guid>
       <description></description>
     </item>
     <item>
@@ -41,6 +55,13 @@
       <link>//localhost:1313/tags/primary-school/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
       <guid>//localhost:1313/tags/primary-school/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Screen-Time</title>
+      <link>//localhost:1313/tags/screen-time/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>//localhost:1313/tags/screen-time/</guid>
       <description></description>
     </item>
     <item>
