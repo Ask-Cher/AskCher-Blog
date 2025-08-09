@@ -20,12 +20,12 @@ Commit and push your changes to your Git repository. Vercel will automatically d
 This is a brief overview of the most important directories and files in your Hugo project.
 
 ## Folder	Purpose
-### theme/content/	
+### /content/	
 This is where you write your content. All blog posts are stored here as Markdown files (.md). 
 The folder structure here dictates the URL structure of your website (e.g., content/posts/my-post.md becomes /posts/my-post/).
-### theme/layouts/	
+### theme/AskCher-Blog/layouts/	
 This is where your templates are. This folder contains the HTML templates that Hugo uses to render your content. You should not need to edit these unless you want to change the overall look and feel of the site.
-### theme/assets/
+### theme/AskCher-Blog/assets/
 This is for css and js assets. Any file you place here is copied directly to the final website without being processed. This is the correct place for your CSS, JavaScript, and images. 
 
 ### config.toml	
@@ -93,3 +93,7 @@ This is the rest of the content of your blog post. It will only be visible when 
 ## Step 4: Save and Deploy
 
 Save your new file. The hugo server will automatically rebuild and refresh your site. Once you are happy with the post, simply git add, git commit, and git push to deploy it.
+
+## Changing the baseurl
+
+Go to hugo.toml in the root folder and in /theme/AskCher-Blog and change the baseurl accordingly.
