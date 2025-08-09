@@ -69,6 +69,9 @@ To create the styled "highlight box" or "key insight" sections, use Markdown's b
 
 To create a "highlight" box, use a simple blockquote:
 
+" > ** Highlight Title ** "
+" > This is the content of your highlight box. Remove the inverted commas and whitespaces"
+
 Markdown
 > **Highlight Title**
 > This is the content of your highlight box.
