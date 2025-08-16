@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on AskCher</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://ask-cher-blog.vercel.app/tags/</link>
     <description>Recent content in Tags on AskCher</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ask-cher-blog.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Child-Development</title>
-      <link>http://localhost:1313/tags/child-development/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/child-development/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/child-development/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/child-development/</guid>
       <description></description>
     </item>
     <item>
       <title>Digital-Habits</title>
-      <link>http://localhost:1313/tags/digital-habits/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/digital-habits/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/digital-habits/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/digital-habits/</guid>
       <description></description>
     </item>
     <item>
       <title>Discipline</title>
-      <link>http://localhost:1313/tags/discipline/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/discipline/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/discipline/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/discipline/</guid>
       <description></description>
     </item>
     <item>
       <title>Edtech</title>
-      <link>http://localhost:1313/tags/edtech/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/edtech/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/edtech/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/edtech/</guid>
       <description></description>
     </item>
     <item>
       <title>Focus</title>
-      <link>http://localhost:1313/tags/focus/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/focus/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/focus/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/focus/</guid>
       <description></description>
     </item>
     <item>
       <title>Parenting</title>
-      <link>http://localhost:1313/tags/parenting/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/parenting/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/parenting/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/parenting/</guid>
       <description></description>
     </item>
     <item>
       <title>Primary-School</title>
-      <link>http://localhost:1313/tags/primary-school/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/primary-school/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/primary-school/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/primary-school/</guid>
       <description></description>
     </item>
     <item>
       <title>Screen-Time</title>
-      <link>http://localhost:1313/tags/screen-time/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/screen-time/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/tags/screen-time/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/screen-time/</guid>
       <description></description>
     </item>
     <item>
       <title>Blue</title>
-      <link>http://localhost:1313/tags/blue/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/blue/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/blue/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/blue/</guid>
       <description></description>
     </item>
     <item>
       <title>Green</title>
-      <link>http://localhost:1313/tags/green/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/green/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/green/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/green/</guid>
       <description></description>
     </item>
     <item>
       <title>Red</title>
-      <link>http://localhost:1313/tags/red/</link>
+      <link>https://ask-cher-blog.vercel.app/tags/red/</link>
       <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/red/</guid>
+      <guid>https://ask-cher-blog.vercel.app/tags/red/</guid>
       <description></description>
     </item>
   </channel>

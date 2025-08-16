@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Digital-Habits on AskCher</title>
-    <link>http://localhost:1313/tags/digital-habits/</link>
+    <link>https://ask-cher-blog.vercel.app/tags/digital-habits/</link>
     <description>Recent content in Digital-Habits on AskCher</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/digital-habits/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ask-cher-blog.vercel.app/tags/digital-habits/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Smart Screens, Healthy Habits: Guiding Your Child&#39;s Digital Journey in Primary School</title>
-      <link>http://localhost:1313/posts/post-2/</link>
+      <link>https://ask-cher-blog.vercel.app/posts/post-2/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/post-2/</guid>
+      <guid>https://ask-cher-blog.vercel.app/posts/post-2/</guid>
       <description>Discover practical strategies and the latest guidelines to help you cultivate healthy digital habits and responsible screen use for your primary school child.</description>
     </item>
   </channel>
