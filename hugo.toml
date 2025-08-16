@@ -2,6 +2,8 @@ baseURL = "https://ask-cher-blog.vercel.app/"
 languageCode = "en-us"
 title = "AskCher"
 theme = "AskCher-Blog" # If you put these files in a theme folder
-
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 [params]
 description = "Discover innovative educational content, teaching strategies, and learning resources designed to inspire and empower parents, educators and students alike."
