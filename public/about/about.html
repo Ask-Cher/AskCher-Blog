@@ -1,0 +1,327 @@
+{{ define "main" }}
+<style>
+        .about-page {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin-top: var(150px); /* or specific value like 80px */
+        }
+
+    /* Hero Section */
+    .hero-section {
+        background: linear-gradient(135deg, #4F87FF 0%, #6366f1 100%);
+        padding: 8rem 2rem; /* Original padding */
+        text-align: center;
+        color: white;
+        margin: 2rem -2rem 4rem -2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        color: white;
+    }
+
+    .hero-section .highlight {
+        color: #FFD700;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+        opacity: 0.9;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Content Container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .section h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #1a1a1a;
+    }
+
+    .section p {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+        color: #555;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Cards Grid */
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+
+    .card {
+        background: white;
+        padding: 2rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border: 1px solid #f0f0f0;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .card-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem auto;
+        font-size: 1.5rem;
+    }
+
+    .card h3 {
+        color: #1a1a1a;
+        margin: 0 0 1rem 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .card p {
+        margin: 0;
+        font-size: 1rem;
+        max-width: none;
+        color: #666;
+    }
+
+    /* Team Cards */
+    .team-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 0 auto 1.5rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+    }
+
+    /* Color variations */
+    .card:nth-child(1) .card-icon { background: #4F87FF; }
+    .card:nth-child(2) .card-icon { background: #10B981; }
+    .card:nth-child(3) .card-icon { background: #8B5CF6; }
+    .card:nth-child(4) .card-icon { background: #F59E0B; }
+    .card:nth-child(5) .card-icon { background: #EF4444; }
+    .card:nth-child(6) .card-icon { background: #6366F1; }
+
+    .card:nth-child(1) .team-avatar { background: #4F87FF; }
+    .card:nth-child(2) .team-avatar { background: #10B981; }
+    .card:nth-child(3) .team-avatar { background: #8B5CF6; }
+    .card:nth-child(4) .team-avatar { background: #F59E0B; }
+
+    /* CTA Section */
+    .cta-section {
+        background: #1a1a1a;
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+        margin: 4rem -2rem 0 -2rem;
+    }
+
+    .cta-section h2 {
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-section p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 2rem;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    .btn-primary {
+        background: #4F87FF;
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background: #3366FF;
+        transform: scale(1.05);
+    }
+
+    .btn-secondary {
+        border: 2px solid white;
+        color: white;
+    }
+
+    .btn-secondary:hover {
+        background: white;
+        color: #1a1a1a;
+    }
+
+    .gray-bg {
+        background: #f9fafb;
+        margin: 0 -2rem;
+        padding: 4rem 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .hero-section h1 {
+            font-size: 2.5rem;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+        }
+        
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .cards-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+    }
+</style>
+
+<div class="about-page">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>We're making education<br><span class="highlight">accessible.</span></h1>
+        <p class="lead">Meet the team behind AskCher - passionate educators and innovators dedicated to transforming learning experiences for families and students.</p>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>We are educators in Singapore, and we spend countless hours with students, parents, and fellow educators to help everyone reach their full potential. We've noticed that families and educators often struggle to find reliable, engaging educational content that actually works.</p>
+            
+            <p>We asked ourselves: "What if we could create educational resources that feel as engaging as they are effective?" That's when AskCher was born - a platform where innovative teaching strategies meet practical parenting advice and student-focused study guides.</p>
+            
+            <p>We're turning education into an accessible, enjoyable, and empowering experience. Today, thousands of families and educators use AskCher to enhance their learning journeys.</p>
+        </div>
+    </section>
+
+    <!-- Mission & Values Section -->
+    <div class="gray-bg">
+        <div class="container">
+            <h2>Our Mission & Values</h2>
+            <p style="text-align: center; margin-bottom: 3rem;">We're driven by the belief that education should be accessible, engaging, and effective for everyone in the learning community.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To transform the way families approach education by providing innovative, practical resources that bridge the gap between parents, educators, and students.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Innovation</h3>
+                    <p>We constantly push boundaries to create new ways of making educational content more engaging and effective for diverse learning needs.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <h3>Community</h3>
+                    <p>We believe in the power of collaboration between parents, educators, and students to create meaningful learning experiences.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌟</div>
+                    <h3>Accessibility</h3>
+                    <p>Quality education should be available to everyone, regardless of background or circumstances, which is why we provide free, high-quality content.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <h3>Excellence</h3>
+                    <p>We strive for the highest standards in everything we create, ensuring our content is research-backed and practically tested.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⭐</div>
+                    <h3>Continuous Learning</h3>
+                    <p>We're always growing, adapting, and improving based on real-world feedback from the families and educators we serve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <p style="text-align: center; margin-bottom: 3rem;">The passionate people behind AskCher who are dedicated to making education accessible and engaging.</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="team-avatar">CR</div>
+                    <h3>Cheng Ren</h3>
+                    <p>Content creator and educator with a belief that "everyone isn't built the same, but with the right approach, anyone can perform well." Focuses on study guides and teaching methods.</p>
+                </div>
+                <div class="card">
+                    <div class="team-avatar">TM2</div>
+                    <h3>Team Member 2</h3>
+                    <p>Specialist in parent-focused educational content, helping families navigate their children's learning journeys with confidence and practical strategies.</p>
+                </div>
+                <div class="card">
+                    <div class="team-avatar">TM3</div>
+                    <h3>Team Member 3</h3>
+                    <p>Educational technology expert who develops innovative approaches to make learning more engaging and effective for modern students.</p>
+                </div>
+                <div class="card">
+                    <div class="team-avatar">TM4</div>
+                    <h3>Team Member 4</h3>
+                    <p>Community builder and content strategist who ensures our resources reach and support families and educators who need them most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Believe in Our Vision for Education?</h2>
+            <p>Whether you're a parent looking for support, an educator seeking fresh ideas, or a student ready to excel, we'd love to connect with you.</p>
+            <div class="cta-buttons">
+                <a href="{{ "posts/" | relURL }}" class="btn btn-primary">Explore Our Resources</a>
+                <a href="#newsletter" class="btn btn-secondary">Subscribe to Newsletter</a>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}

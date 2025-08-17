@@ -10,6 +10,8 @@ Start the local development server: hugo server
 
 Open the URL displayed in the terminal (usually http://localhost:1313/) in your web browser. The site will automatically refresh as you make changes.
 
+Use hugo --minify to run it using the base url.
+
 Edit the files in the project to make your desired changes.
 
 Once you're happy with the changes, stop the server by pressing Ctrl+C.
@@ -20,9 +22,13 @@ Commit and push your changes to your Git repository. Vercel will automatically d
 This is a brief overview of the most important directories and files in your Hugo project.
 
 ## Folder	Purpose
-### /content/	
-This is where you write your content. All blog posts are stored here as Markdown files (.md). 
+### theme/AskCher-Blog/content/posts
+This is where you write your content. 
+All blog posts are stored here as Markdown files (.md). 
 The folder structure here dictates the URL structure of your website (e.g., content/posts/my-post.md becomes /posts/my-post/).
+Do not edit the file in /content/posts, only theme/AskCher-Blog/content/posts
+/content/posts in the root folder is auto generated based on theme/AskCher-Blog/content/posts
+
 ### theme/AskCher-Blog/layouts/	
 This is where your templates are. This folder contains the HTML templates that Hugo uses to render your content. You should not need to edit these unless you want to change the overall look and feel of the site.
 ### theme/AskCher-Blog/assets/

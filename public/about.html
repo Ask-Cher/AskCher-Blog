@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AskCher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            padding-top: 80px; /* Account for fixed navigation */
+        }
+
+        /* Navigation Styles (matching your header.html) */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #4F46E5;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #4F46E5;
+        }
+
+        .subscribe-btn {
+            background: #4F46E5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .subscribe-btn:hover {
+            background: #3730A3;
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .hero-section .highlight {
+            color: #FFD700;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Section Styling */
+        .about-section {
+            padding: 4rem 2rem;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+        }
+
+        .about-section p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Two Column Layout */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            font-size: 1.5rem;
+        }
+
+        .card h3 {
+            color: #1a1a1a;
+            margin: 0 0 1rem 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .card p {
+            margin: 0;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Team Cards */
+        .team-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        /* Color variations for cards */
+        .card:nth-child(1) .card-icon { background: #4F46E5; }
+        .card:nth-child(2) .card-icon { background: #10B981; }
+        .card:nth-child(3) .card-icon { background: #8B5CF6; }
+        .card:nth-child(4) .card-icon { background: #F59E0B; }
+        .card:nth-child(5) .card-icon { background: #EF4444; }
+        .card:nth-child(6) .card-icon { background: #6366F1; }
+
+        .card:nth-child(1) .team-avatar { background: #4F46E5; }
+        .card:nth-child(2) .team-avatar { background: #10B981; }
+        .card:nth-child(3) .team-avatar { background: #8B5CF6; }
+        .card:nth-child(4) .team-avatar { background: #F59E0B; }
+
+        /* Background Sections */
+        .gray-bg {
+            background: #f9fafb;
+        }
+
+        .dark-bg {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .dark-bg h2 {
+            color: white;
+        }
+
+        .dark-bg p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* CTA Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #4F46E5;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #3730A3;
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #1a1a1a;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #4F46E5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-section h2 {
+                font-size: 2rem;
+            }
+            
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                AskCher
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/posts/" class="nav-link">
+                        Blog
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about.html" class="nav-link active">About</a>
+                </li>
+                <li>
+                    <a href="#newsletter" class="subscribe-btn">Stay Updated</a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="fade-in">
+                <h1>We're making education<br><span class="highlight">accessible.</span></h1>
+                <p class="lead">Meet the team behind AskCher - passionate educators and innovators dedicated to transforming learning experiences for families and students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="two-column">
+                <div class="fade-in">
+                    <h2>Our Story</h2>
+                    <p>We are educators in Singapore, and we spend countless hours with students, parents, and fellow educators to help everyone reach their full potential. We've noticed that families and educators often struggle to find reliable, engaging educational content that actually works.</p>
+                    <p>We asked ourselves: "What if we could create educational resources that feel as engaging as they are effective?" That's when AskCher was born - a platform where innovative teaching strategies meet practical parenting advice and student-focused study guides.</p>
+                    <p>We're turning education into an accessible, enjoyable, and empowering experience. Today, thousands of families and educators use AskCher to enhance their learning journeys.</p>
+                </div>
+                <div class="fade-in">
+                    <!-- You can add an image here if you have one -->
+                    <div style="background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%); height: 300px; border-radius: 1.5rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                        <i class="fas fa-users" style="font-size: 4rem; opacity: 0.5;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values Section -->
+    <section class="about-section gray-bg">
+        <div class="container">
+            <div class="text-center fade-in" style="text-align: center; margin-bottom: 3rem;">
+                <h2>Our Mission & Values</h2>
+                <p>We're driven by the belief that education should be accessible, engaging, and effective for everyone in the learning community.</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card fade-in hover-lift">
+                    <div class="card-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To transform the way families approach education by providing innovative, practical resources that bridge the gap between parents, educators, and students.</p>
+                </div>
+                <div class="card fade-in hover-lift">
+                    <div class="card-icon">⚡</div>
+                    <h3>Innovation</h3>
+                    <p>We constantly push boundaries to create new ways of making educational content more engaging and effective for diverse learning needs.</p>
+                </div>
+                <div class="card fade-in hover-lift">
+                    <div class="card-icon">👥</div>
+                    <h3>Community</h3>
+                    <p>We believe in the power of collaboration between parents, educators, and students to create meaningful learning experiences.</p>
+                </div>
+                <div class="card fade-in hover-lift">
+                    <div class="card-icon">🌟</div>
+                    <h3>Accessibility</h3>
+                    <p>Quality education should be available to everyone, regardless of background or circumstances, which is why we provide free, high-quality content.</p>
+                </div>
+                <div class="card fade-in hover-lift">
+                    <div class="card-icon">📈</div>
+                    <h3>Excellence</h3>
+                    <p>We strive for the highest standards in everything we create, ensuring our content is research-backed and practically tested.</p>
+                </div>
+                <div class="card fade-in hover-lift">
+                    <div class="card-icon">⭐</div>
+                    <h3>Continuous Learning</h3>
+                    <p>We're always growing, adapting, and improving based on real-world feedback from the families and educators we serve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="text-center fade-in" style="text-align: center; margin-bottom: 3rem;">
+                <h2>Meet Our Team</h2>
+                <p>The passionate people behind AskCher who are dedicated to making education accessible and engaging.</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card fade-in hover-lift">
+                    <div class="team-avatar">CR</div>
+                    <h3>Cheng Ren</h3>
+                    <p>Content creator and educator with a belief that "everyone isn't built the same, but with the right approach, anyone can perform well." Focuses on study guides and teaching methods.</p>
+                </div>
+                <div class="card fade-in hover-lift">
+                    <div class="team-avatar">TM2</div>
+                    <h3>Team Member 2</h3>
+                    <p>Specialist in parent-focused educational content, helping families navigate their children's learning journeys with confidence and practical strategies.</p>
+                </div>
+                <div class="card fade-in hover-lift">
+                    <div class="team-avatar">TM3</div>
+                    <h3>Team Member 3</h3>
+                    <p>Educational technology expert who develops innovative approaches to make learning more engaging and effective for modern students.</p>
+                </div>
+                <div class="card fade-in hover-lift">
+                    <div class="team-avatar">TM4</div>
+                    <h3>Team Member 4</h3>
+                    <p>Community builder and content strategist who ensures our resources reach and support families and educators who need them most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-section dark-bg">
+        <div class="container" style="text-align: center;">
+            <div class="fade-in">
+                <h2>Believe in Our Vision for Education?</h2>
+                <p>Whether you're a parent looking for support, an educator seeking fresh ideas, or a student ready to excel, we'd love to connect with you.</p>
+                <div class="cta-buttons">
+                    <a href="/posts/" class="btn btn-primary">Explore Our Resources</a>
+                    <a href="#newsletter" class="btn btn-secondary">Subscribe to Newsletter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="/posts/">Blog</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/privacy.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2024 AskCher. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Mobile menu functionality (basic implementation)
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
