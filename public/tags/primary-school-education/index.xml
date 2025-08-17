@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Primary-School Education on AskCher</title>
+    <link>http://localhost:1313/tags/primary-school-education/</link>
+    <description>Recent content in Primary-School Education on AskCher</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/primary-school-education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tips and Best Practices for Primary School Education for Your Child</title>
+      <link>http://localhost:1313/posts/post-3/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/post-3/</guid>
+      <description>XYZ</description>
+    </item>
+  </channel>
+</rss>
