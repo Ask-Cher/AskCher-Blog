@@ -16,7 +16,7 @@
                         <span><i class="fas fa-calendar"></i> {{ .Date.Format "Jan 2, 2006" }}</span>
                         <span><i class="fas fa-clock"></i> {{ .ReadingTime }} min read</span>
                     </div>
-                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
                     <div class="excerpt">
                         {{ if .Summary }}
                             {{ .Summary | truncate 150 }}

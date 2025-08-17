@@ -58,7 +58,7 @@
                         <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
                     </div>
                     <h2>{{ .Title }}</h2>
-                    <p class="excerpt">{{ .Summary }}</p>  <a href="{{ .Permalink }}" class="read-more-btn">
+                    <p class="excerpt">{{ .Summary }}</p>  <a href="{{ .RelPermalink }}" class="read-more-btn">
                         Read Full Article
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -89,7 +89,7 @@
                         </div>
                         <h3>{{ .Title }}</h3>
                         <p class="excerpt">{{ .Summary }}</p>
-                        <a href="{{ .Permalink }}" class="post-link">
+                        <a href="{{ .RelPermalink }}" class="post-link">
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
