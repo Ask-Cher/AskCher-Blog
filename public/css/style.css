@@ -110,7 +110,7 @@ p {
 }
 
 .cta-primary:hover {
-    background: #a39280;
+    background: #1E90FF;
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
 }
@@ -296,7 +296,7 @@ p {
 }
 
 .subscribe-btn:hover {
-    background: #a39280;
+    background: #1E90FF;
     transform: translateY(-2px);
     box-shadow: var(--shadow-medium);
 }
@@ -587,7 +587,7 @@ p {
 }
 
 .read-more-btn:hover {
-    background: #a39280;
+    background: #1E90FF;
     transform: translateX(5px);
 }
 
@@ -704,7 +704,7 @@ p {
 
 .post-link:hover {
     transform: translateX(5px);
-    color: #a39280;
+    color: #1E90FF;
 }
 
 /* ===== NEWSLETTER SECTION ===== */
@@ -939,6 +939,7 @@ p {
 .footer-links a:hover {
     color: var(--askcher-blue);
 }
+
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeInUp {

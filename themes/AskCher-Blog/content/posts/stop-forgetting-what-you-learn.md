@@ -2,7 +2,7 @@
 title: "Stop Forgetting What you Learn"
 date: 2025-01-15T00:00:00+08:00
 description: ""
-summary: "Tired of cramming for exams only to forget everything a week later? This post explains why your brain keeps forgetting new information. Learn how to study smarter not harder."
+summary: "Tired of cramming for exams only to forget everything a week later? This post explains why, and how to study smarter via research-backed techniques	."
 author: "Cheng Ren Teo"
 canonicalURL: []
 images: [] # Optional: Add a featured image path here

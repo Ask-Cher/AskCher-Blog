@@ -10,16 +10,16 @@
     <atom:link href="http://localhost:1313/tags/digital-habits/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Smart Screens, Healthy Habits: Guiding Your Child&#39;s Digital Journey in Primary School</title>
-      <link>http://localhost:1313/posts/post-2/</link>
+      <link>http://localhost:1313/posts/digital-habits/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/post-2/</guid>
+      <guid>http://localhost:1313/posts/digital-habits/</guid>
       <description>Discover practical strategies and the latest guidelines to help you cultivate healthy digital habits and responsible screen use for your primary school child.</description>
     </item>
     <item>
       <title>Stop Forgetting What you Learn</title>
-      <link>http://localhost:1313/posts/post-4/</link>
+      <link>http://localhost:1313/posts/stop-forgetting-what-you-learn/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/post-4/</guid>
+      <guid>http://localhost:1313/posts/stop-forgetting-what-you-learn/</guid>
       <description>Tired of cramming for exams only to forget everything a week later? This post explains why your brain keeps forgetting new information. Learn how to study smarter not harder.</description>
     </item>
   </channel>
