@@ -9,9 +9,7 @@ images: [] # Optional: Add a featured image path here
 categories:
   - "for-parents"
 tags:
-  - parenting
-  - tuition
-  - education
+
 layout: single
 ---
 

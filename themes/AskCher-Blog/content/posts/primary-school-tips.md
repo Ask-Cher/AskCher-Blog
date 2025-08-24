@@ -1,6 +1,6 @@
 ---
 title: "Tips and Best Practices for Primary School Education for Your Child"
-date: 2025-01-15T00:00:00+08:00
+date: 2025-03-10T00:00:00+08:00
 description: "Navigating Singapore's primary school system can feel overwhelming. This post offers practical, no-nonsense advice to help your child thrive."
 summary: "Navigating Singapore's primary school system can feel overwhelming. This post offers parents practical, no-nonsense advice to help your child thrive."
 author: "Cheng Ren Teo"
@@ -9,10 +9,7 @@ images: [] # Optional: Add a featured image path here
 categories:
   - "For Parents"
 tags:
-  - parenting
-  - primary-school education
-  - child-development
-  - edtech
+
 layout: single
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Stop Forgetting What you Learn"
-date: 2025-01-15T00:00:00+08:00
+date: 2025-02-16T00:00:00+08:00
 description: ""
 summary: "Tired of cramming for exams only to forget everything a week later? This post explains why, and how to study smarter via research-backed techniques	."
 author: "Cheng Ren Teo"
@@ -9,11 +9,7 @@ images: [] # Optional: Add a featured image path here
 categories:
   - "study-guides"
 tags:
-  - parenting
-  - screen-time
-  - digital-habits
-  - child-development
-  - edtech
+
 layout: single
 ---
 

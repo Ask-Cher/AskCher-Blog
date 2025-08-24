@@ -1,6 +1,6 @@
 ---
 title: "More than Grades: Why Self-Discipline and Focus Are Your Child's Real Superpowers"
-date: 2025-01-15T00:00:00+08:00
+date: 2025-06-02T00:00:00+08:00
 description: "Is your child struggling to focus on homework? Discover five practical strategies from a Singapore tutor on how you can build a strong foundation of focus and self-control at home to set your child up for success in school and in life."
 summary: "Is your child struggling to focus on homework? Discover five practical strategies from a Singapore tutor on how you can build a strong foundation of focus and self-control at home to set your child up for success in school and in life."
 author: "Cheng Ren Teo"
@@ -9,11 +9,6 @@ images: [] # Optional: Add a featured image path here
 categories:
   - "For Parents"
 tags:
-  - parenting
-  - discipline
-  - focus
-  - child-development
-  - primary-school
 layout: single
 ---
 

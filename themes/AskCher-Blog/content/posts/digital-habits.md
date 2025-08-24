@@ -1,6 +1,6 @@
 ---
 title: "Smart Screens, Healthy Habits: Guiding Your Child's Digital Journey in Primary School"
-date: 2025-01-15T00:00:00+08:00
+date: 2025-04-01T00:00:00+08:00
 description: "Discover practical strategies and the latest guidelines to help you cultivate healthy digital habits and responsible screen use for your primary school child."
 summary: "Discover practical strategies and the latest guidelines to help you cultivate healthy digital habits and responsible screen use for your primary school child."
 author: "Cheng Ren Teo"
@@ -9,11 +9,6 @@ images: [] # Optional: Add a featured image path here
 categories:
   - "For Parents"
 tags:
-  - parenting
-  - screen-time
-  - digital-habits
-  - child-development
-  - edtech
 layout: single
 ---
 
