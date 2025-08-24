@@ -37,6 +37,13 @@
       <description></description>
     </item>
     <item>
+      <title>Education</title>
+      <link>http://localhost:1313/tags/education/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/education/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Focus</title>
       <link>http://localhost:1313/tags/focus/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
@@ -69,6 +76,13 @@
       <link>http://localhost:1313/tags/screen-time/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
       <guid>http://localhost:1313/tags/screen-time/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tuition</title>
+      <link>http://localhost:1313/tags/tuition/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/tags/tuition/</guid>
       <description></description>
     </item>
   </channel>

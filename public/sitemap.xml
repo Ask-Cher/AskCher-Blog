@@ -17,10 +17,16 @@
     <loc>http://localhost:1313/tags/edtech/</loc>
     <lastmod>2025-01-15T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/education/</loc>
+    <lastmod>2025-01-15T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/focus/</loc>
     <lastmod>2025-01-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/for-parents/</loc>
+    <lastmod>2025-01-15T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/study-guides/</loc>
     <lastmod>2025-01-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/building-discipline/</loc>
@@ -47,13 +53,16 @@
     <loc>http://localhost:1313/posts/stop-forgetting-what-you-learn/</loc>
     <lastmod>2025-01-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/study-guides/</loc>
-    <lastmod>2025-01-15T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-01-15T00:00:00+08:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/too-much-tuition/</loc>
+    <lastmod>2025-01-15T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/primary-school-tips/</loc>
+    <lastmod>2025-01-15T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tuition/</loc>
     <lastmod>2025-01-15T00:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
