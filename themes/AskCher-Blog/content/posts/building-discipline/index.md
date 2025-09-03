@@ -10,6 +10,8 @@ categories:
   - "For Parents"
 tags:
 layout: single
+resources:
+- src: "thumbnail.jpg"
 ---
 
 ---

@@ -1,36 +1,42 @@
 {{- define "main" -}}
 <section class="recent-posts">
-    <div class="recent-container">
-        <div class="section-header">
-            <h1 class="section-title">Articles</h1>
-        </div>
-        <div class="posts-grid">
-            {{- range .Pages -}}
-            <article class="post-card">
-                <div class="post-image">
-                    <i class="fas fa-file-text"></i>
-                    <div class="post-category">{{ with .Section }}{{ . | title }}{{ end }}</div>
-                </div>
-                <div class="post-content">
-                    <div class="post-meta">
-                        <span><i class="fas fa-calendar"></i> {{ .Date.Format "Jan 2, 2006" }}</span>
-                        <span><i class="fas fa-clock"></i> {{ .ReadingTime }} min read</span>
-                    </div>
-                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                    <div class="excerpt">
-                        {{ if .Summary }}
-                            {{ .Summary | truncate 150 }}
-                        {{ else }}
-                            {{ .Content | plainify | truncate 150 }}
-                        {{ end }}
-                    </div>
-                    <a href="{{ .RelPermalink }}" class="post-link">
-                        Read More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </article>
-            {{- end -}}
-        </div>
+  <div class="recent-container">
+    <div class="section-header">
+      <h1 class="section-title">Articles</h1>
     </div>
+    <div class="posts-grid">
+      {{- range .Pages -}}
+      <article class="post-card">
+        <div class="post-image">
+          {{- $thumbnail := .Resources.GetMatch "thumbnail.*" -}}
+          {{- if $thumbnail -}}
+            {{- $resized := $thumbnail.Resize "400x" -}}
+            <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}" />
+          {{- else -}}
+            <i class="fas fa-file-text"></i>
+          {{- end -}}
+          <div class="post-category">{{ with .Section }}{{ . | title }}{{ end }}</div>
+        </div>
+        <div class="post-content">
+          <div class="post-meta">
+            <span><i class="fas fa-calendar"></i> {{ .Date.Format "Jan 2, 2006" }}</span>
+            <span><i class="fas fa-clock"></i> {{ .ReadingTime }} min read</span>
+          </div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <div class="excerpt">
+            {{ if .Summary }}
+              {{ .Summary | truncate 150 }}
+            {{ else }}
+              {{ .Content | plainify | truncate 150 }}
+            {{ end }}
+          </div>
+          <a href="{{ .RelPermalink }}" class="post-link">
+            Read More <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+      {{- end -}}
+    </div>
+  </div>
 </section>
 {{- end -}}

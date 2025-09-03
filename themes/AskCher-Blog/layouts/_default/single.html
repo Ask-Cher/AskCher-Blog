@@ -1,6 +1,7 @@
 {{- define "main" -}}
     
-    <header class="post-header">
+    <header class="post-header" {{- $thumbnail := .Resources.GetMatch "thumbnail-blur.*" -}}{{- if $thumbnail -}}{{- $resized := $thumbnail.Resize "1200x600" -}} style="background-image: url('{{ $resized.RelPermalink }}');"{{- end -}}>
+        <div class="post-header-overlay"></div>
         <div class="post-header-content">
             <nav class="post-breadcrumb">
                 <a href="{{ "/" | relURL }}">Home</a>

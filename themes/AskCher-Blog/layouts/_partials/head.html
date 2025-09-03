@@ -18,4 +18,12 @@
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 
+{{ with .Params.images }}
+<meta property="og:image" content="{{ index . 0 | absURL }}">
+{{ else }}
+{{ with .Site.Params.images }}
+<meta property="og:image" content="{{ index . 0 | absURL }}">
+{{ end }}
+{{ end }}
+
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
