@@ -1,7 +1,10 @@
 baseURL = "https://ask-cher-blog.vercel.app/"
 languageCode = "en-us"
 title = "AskCher"
-theme = "AskCher-Blog" # If you put these files in a theme folder
+theme = "AskCher-Blog"
 
 [params]
 description = "Discover innovative educational content, teaching strategies, and learning resources designed to inspire and empower parents, educators and students alike."
+    [params.vercel_analytics]
+        enable = true
+    disableLiveReload = true
