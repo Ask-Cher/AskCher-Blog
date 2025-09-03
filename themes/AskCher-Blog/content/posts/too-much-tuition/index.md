@@ -1,6 +1,7 @@
 ---
 title: "The Tuition Trap: Is More Always Better?"
 date: 2025-01-15T00:00:00+08:00
+thumbnail: "thumbnail.jpg"
 description: "Trying to figure out if your child needs more tuition? This post by a Singaporean tutor explains why adding more classes might not be the best solution. Discover how to get to the real root of their academic struggles and empower them to become a resilient, confident learner."
 summary: "Trying to figure out if your child needs more tuition? This post by a Singaporean tutor explains why adding more classes might not be the best solution. Discover how to get to the real root of their academic struggles and empower them to become a resilient, confident learner."
 author: "Cheng Ren Teo"
