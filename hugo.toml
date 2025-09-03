@@ -9,4 +9,3 @@ theme = "AskCher-Blog"
 description = "Discover innovative educational content, teaching strategies, and learning resources designed to inspire and empower parents, educators and students alike."
     [params.vercel_analytics]
         enable = true
-    disableLiveReload = true
