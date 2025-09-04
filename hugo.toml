@@ -1,4 +1,3 @@
-baseURL = "https://ask-cher-blog.vercel.app/"
 languageCode = "en-us"
 title = "AskCher"
 theme = "AskCher-Blog"
