@@ -17,15 +17,19 @@
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 
-<!-- Single og:image tag with proper URL handling -->
+<!-- Single og:image tag with forced production URL -->
 {{ $ogImage := "" }}
 {{ $ogImageResource := "" }}
+{{ $productionBaseURL := "https://ask-cher-blog.vercel.app" }}
+
 {{ if .Params.thumbnail }}
   {{ $ogImageResource = resources.Get .Params.thumbnail }}
   {{ if $ogImageResource }}
-    {{ $ogImage = $ogImageResource.Permalink }}
+    <!-- Use resource dimensions but force production URL -->
+    {{ $ogImage = printf "%s%s" $productionBaseURL ($ogImageResource.RelPermalink) }}
   {{ else }}
-    {{ $ogImage = .Params.thumbnail | absURL }}
+    <!-- Fallback: construct URL manually -->
+    {{ $ogImage = printf "%s%s" $productionBaseURL .Params.thumbnail }}
   {{ end }}
 {{ end }}
 
@@ -42,3 +46,13 @@
 {{ end }}
 <meta property="og:image:alt" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 {{ end }}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ if $ogImage }}
+<meta name="twitter:image" content="{{ $ogImage }}">
+{{ end }}
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
