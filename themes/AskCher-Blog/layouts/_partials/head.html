@@ -19,16 +19,26 @@
 
 <!-- Single og:image tag with proper URL handling -->
 {{ $ogImage := "" }}
+{{ $ogImageResource := "" }}
 {{ if .Params.thumbnail }}
-  {{ $ogImage = .Params.thumbnail | absURL }}
-{{ else if .Params.images }}
-  {{ $ogImage = index .Params.images 0 | absURL }}
-{{ else if .Site.Params.images }}
-  {{ $ogImage = index .Site.Params.images 0 | absURL }}
+  {{ $ogImageResource = resources.Get .Params.thumbnail }}
+  {{ if $ogImageResource }}
+    {{ $ogImage = $ogImageResource.Permalink }}
+  {{ else }}
+    {{ $ogImage = .Params.thumbnail | absURL }}
+  {{ end }}
 {{ end }}
+
 {{ if $ogImage }}
 <meta property="og:image" content="{{ $ogImage }}">
 <meta property="og:image:type" content="image/jpeg">
+{{ if $ogImageResource }}
+<meta property="og:image:width" content="{{ $ogImageResource.Width }}">
+<meta property="og:image:height" content="{{ $ogImageResource.Height }}">
+{{ else }}
+<!-- Fallback dimensions if image resource not found -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+{{ end }}
+<meta property="og:image:alt" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 {{ end }}
