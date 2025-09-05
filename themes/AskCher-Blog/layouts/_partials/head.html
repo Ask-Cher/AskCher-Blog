@@ -20,18 +20,17 @@
 
 {{ with .Params.thumbnail }}
     {{ with $.Page.Resources.GetMatch . }}
-        <meta property="og:image" content="{{ .Permalink }}" />
+        <meta property="og:image" content="{{ .Permalink | replaceRE `^http://localhost:1313` `https://ask-cher-blog.vercel.app` }}" />
     {{ else }}
-        {{/* Fallback if thumbnail param exists but resource not found (e.g., it's an external URL or not a page bundle resource ) */}}
-        <meta property="og:image" content="{{ . | absURL }}" />
+        <meta property="og:image" content="{{ . | replaceRE `^http://localhost:1313` `https://ask-cher-blog.vercel.app` }}" />
     {{ end }}
 {{ else }}
     {{ with .Site.Params.images }}
-        <meta property="og:image" content="{{ index . 0 | absURL }}">
+        <meta property="og:image" content="{{ index . 0 | replaceRE `^http://localhost:1313` `https://ask-cher-blog.vercel.app` }}">
     {{ end }}
 {{ end }}
 
-<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink | replaceRE `^http://localhost:1313` `https://ask-cher-blog.vercel.app` }}" />
 <meta property="og:type" content="article" />
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
