@@ -14,10 +14,15 @@
 <link rel="stylesheet" href="{{ "css/blog-post.css" | relURL }}">
 {{ end }}
 
+<meta property="og:type" content="website">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ with .Params.thumbnail }}
+<meta property="og:image" content="{{ . }}" />
+{{ end }}
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:type" content="article" />
+
 
 {{ with .Params.images }}
 <meta property="og:image" content="{{ index . 0 | absURL }}">
