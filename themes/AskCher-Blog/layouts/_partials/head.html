@@ -17,20 +17,21 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
 {{ with .Params.thumbnail }}
-<meta property="og:image" content="{{ . | absURL }}" />
+    {{ with $.Page.Resources.GetMatch . }}
+        <meta property="og:image" content="{{ .Permalink }}" />
+    {{ else }}
+        {{/* Fallback if thumbnail param exists but resource not found (e.g., it's an external URL or not a page bundle resource ) */}}
+        <meta property="og:image" content="{{ . | absURL }}" />
+    {{ end }}
+{{ else }}
+    {{ with .Site.Params.images }}
+        <meta property="og:image" content="{{ index . 0 | absURL }}">
+    {{ end }}
 {{ end }}
+
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:type" content="article" />
 
-
-{{ with .Params.images }}
-<meta property="og:image" content="{{ index . 0 | absURL }}">
-{{ else }}
-{{ with .Site.Params.images }}
-<meta property="og:image" content="{{ index . 0 | absURL }}">
-{{ end }}
-{{ end }}
-
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
