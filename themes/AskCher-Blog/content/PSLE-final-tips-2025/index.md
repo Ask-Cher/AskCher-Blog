@@ -14,12 +14,6 @@ resources:
 - src:
 ---
 
----
-
-# Final Tips for Parents: Navigating the PSLE Journey with Your Child (From a Singaporean Tutor's Desk)
-
-## Introduction
-
 PSLE is less than 30 days away. I understand the mix of anticipation, anxiety, and determination that fills the air as the exams draw near. It's more than just an academic hurdle; it's a rite of passage in the Singaporean education system. While we've all been focused on academic preparation, the final weeks leading up to the PSLE are truly about nurturing your child's spirit, fine-tuning their revision, and creating a home environment that's a sanctuary, not a pressure cooker. Let me share some insights and practical tips, straight from my experience, to help you and your child navigate this crucial period with confidence and resilience.
 
 ## 1. Prioritise Well-being: It's Not Just About the Books
@@ -82,7 +76,6 @@ Resist the urge for intense, last-minute cramming. Encourage light review – pe
 
 Ensure your child has a good, nutritious breakfast. Arrive at the examination center with ample time to spare to avoid any last-minute rush or panic. Remind your child to read instructions carefully, manage their time wisely during the paper, and simply do their best. Before they walk into that hall, give them a hug and reiterate your unconditional love and support, regardless of the results. That's the most important message they can carry with them.
 
----
 ### The Bigger Picture
 
 The PSLE is undoubtedly a significant hurdle, but it is just one chapter in your child's life story. As a tutor, I've seen that the most successful students are often those with strong parental support, not just academic pressure. Your role in these final weeks is to be their anchor, their strategic guide, and their unwavering source of encouragement. By prioritizing their well-being, guiding them through smart revision, fostering a supportive home environment, and ensuring a calm approach on exam day, you're not just preparing them for an exam; you're teaching them resilience, self-care, and the true meaning of effort. And that, my dear parents, is a lesson that will serve them far beyond the PSLE results slip.
