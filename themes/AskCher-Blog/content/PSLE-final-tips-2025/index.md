@@ -11,7 +11,6 @@ categories:
 tags:
 layout: single
 resources:
-- src:
 ---
 
 PSLE is less than 30 days away. I understand the mix of anticipation, anxiety, and determination that fills the air as the exams draw near. It's more than just an academic hurdle; it's a rite of passage in the Singaporean education system. While we've all been focused on academic preparation, the final weeks leading up to the PSLE are truly about nurturing your child's spirit, fine-tuning their revision, and creating a home environment that's a sanctuary, not a pressure cooker. Let me share some insights and practical tips, straight from my experience, to help you and your child navigate this crucial period with confidence and resilience.
