@@ -1,8 +1,8 @@
 ---
 title: "Preparing your child for the PSLE"
 date: 2025-09-04T00:00:00+08:00
-description: "As the PSLE approaches, this article offers parents essential guidance for the final weeks leading up to the PSLE."
-summary: " As the PSLE approaches, this article offers parents essential guidance for the final weeks leading up to the PSLE."
+description: "As the PSLE approaches, get some essential guidance for the final weeks leading up to the PSLE, as recommended by a tutor."
+summary: " As the PSLE approaches, get some essential guidance for the final weeks leading up to the PSLE, as recommended by a tutor."
 author: "Cheng Ren Teo"
 canonicalURL: []
 images: [] # Optional: Add a featured image path here
