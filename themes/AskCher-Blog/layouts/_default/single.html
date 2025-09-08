@@ -1,6 +1,15 @@
 {{- define "main" -}}
     
-    <header class="post-header" {{- $thumbnail := .Resources.GetMatch "thumbnail-blur.*" -}}{{- if $thumbnail -}}{{- $resized := $thumbnail.Resize "1200x600" -}} style="background-image: url('{{ $resized.RelPermalink }}');"{{- end -}}>
+    <!--<header class="post-header" {{- $thumbnail := .Resources.GetMatch "thumbnail-blur.*" -}}{{- if $thumbnail -}}{{- $resized := $thumbnail.Resize "1200x600" -}} style="background-image: url('{{ $resized.RelPermalink }}');"{{- end -}}> -->
+    <header class="post-header">
+        {{- $thumbnail := .Resources.GetMatch "thumbnail.*" -}}
+        {{- if $thumbnail -}}
+            <picture>
+                <source srcset="{{ .Resources.GetMatch "thumbnail-large.*" | relURL }}" media="(min-width: 1024px)">
+                <source srcset="{{ .Resources.GetMatch "thumbnail-medium.*" | relURL }}" media="(min-width: 768px)">
+                <img src="{{ .Resources.GetMatch "thumbnail-small.*" | relURL }}" alt="{{ .Title }}">
+            </picture>
+        {{- end -}}    
         <div class="post-header-overlay"></div>
         <div class="post-header-content">
             <nav class="post-breadcrumb">

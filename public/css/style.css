@@ -872,14 +872,14 @@ p {
 
 /* ==== POST ==== */
 .post-header {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
-    min-height: 400px; /* Adjust as needed */
     display: flex;
+    flex-direction: column;
     align-items: center;
-  }
+    justify-content: center;
+    overflow: hidden; /* Ensures no overflow from the image */
+    min-height: 400px; /* Maintain the height for consistency */
+}
   
   .post-header-overlay {
     position: absolute;
@@ -890,6 +890,13 @@ p {
     background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
     z-index: 1;
   }
+
+  .post-header picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image fills the container while maintaining its aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners if needed */
+}
   
   .post-header-content {
     position: relative;
@@ -897,6 +904,23 @@ p {
     color: white; /* Make text white to stand out on image */
     width: 100%;
   }
+
+  .post-header img {
+    display: block;
+}
+
+.post-header .fallback {
+    display: none; /* Hide fallback if an image is present */
+}
+
+.post-header.no-thumbnail .fallback {
+    display: block;
+    background: var(--light-gray);
+    color: var(--text-gray);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
   
   /* Style adjustments for better readability */
   .post-breadcrumb a,
@@ -1174,6 +1198,13 @@ p {
 
     .newsletter-visual {
         display: none;
+    }
+    .post-header {
+        min-height: 300px; /* Reduce height for smaller screens */
+    }
+
+    .post-header picture img {
+        object-fit: contain; /* Adjust fit for smaller screens if needed */
     }
 }
 
