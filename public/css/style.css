@@ -879,6 +879,10 @@ p {
     min-height: 400px; /* Adjust as needed */
     display: flex;
     align-items: center;
+    padding: 8rem 0 4rem;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
   }
   
   .post-header-overlay {

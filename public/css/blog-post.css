@@ -3,13 +3,6 @@
 @import url('style.css');
 
 /* ===== POST HEADER ===== */
-.post-header {
-    background: linear-gradient(135deg, var(--askcher-blue) 0%, #a39280 100%);
-    padding: 8rem 0 4rem;
-    color: var(--white);
-    position: relative;
-    overflow: hidden;
-}
 
 .post-header::before {
     content: '';
