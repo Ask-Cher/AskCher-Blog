@@ -76,7 +76,7 @@ Of course, too much of a good thing can be detrimental. If AI can be used to obt
 
 **Pro Tip:** If you or your child is struggling with a question, try uploading the question to any LLM, and prompt it using the following "Teach me how to solve this question. I don't want the answers directly, I want to understand the step-by-step process of breaking down this question, and working through each individual concept so that I may apply the same problem-solving approach to future problems. " Once you/ your child understands the approach, ensure they close the tab and work through the problem by themselves once more.
 
-\*\*Pro Tip 2: \*\* Always remember to check the AI's answer. The real learning is in the process, and critically evaluating the result is part of that.
+**Pro Tip 2:** Always remember to check the AI's answer. The real learning is in the process, and critically evaluating the result is part of that.
 
 #### Pay Extra Care to the Distractions of Technology
 
