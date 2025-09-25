@@ -1,6 +1,6 @@
 ---
 title: "Primary School Class Sizes: Does it really matter?"
-date: 2025-09-04T00:00:00+08:00
+date: 2025-09-20T00:00:00+08:00
 description: "Small classes sizes are beneficial, yet almost impossible to achieve in Singapore schools. Learn how to accelerate learning even beyond the limitations of the classroom."
 summary: " Small classes sizes are beneficial, yet almost impossible to achieve in Singapore schools. Learn how to accelerate learning even beyond the limitations of the classroom."
 author: "Cheng Ren Teo"
