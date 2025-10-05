@@ -9,10 +9,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-{{ if .IsPage }}
-<link rel="stylesheet" href="{{ "css/blog-post.css" | relURL }}">
-{{ end }}
+{{- /* 1. Get both stylesheets as resources */ -}}
+{{- $style := resources.Get "css/style.css" -}}
+{{- $blogPostStyle := resources.Get "css/blog-post.css" -}}
+
+{{- /* 2. Define the list of styles to process (for the blog post page, include both; otherwise, just style.css) */ -}}
+{{- $stylesToProcess := slice $style -}}
+{{- if .IsPage -}}
+  {{- $stylesToProcess = slice $style $blogPostStyle -}}
+{{- end -}}
+
+{{- /* 3. Combine them into a single file resource */ -}}
+{{- $styles := $stylesToProcess | resources.Concat "css/bundle.css" -}}
+
+{{- /* 4. Optional: Minify and fingerprint for caching in production (best practice) */ -}}
+{{- if hugo.IsProduction -}}
+  {{ $styles = $styles | minify | fingerprint }}
+{{- end -}}
+
+{{- /* 5. Link the final bundled file */ -}}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">

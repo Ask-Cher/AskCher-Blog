@@ -48,9 +48,14 @@
             {{- with (index (where .Site.RegularPages "Type" "posts") 0) -}}
             <article class="featured-post">
                 <div class="featured-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-brain"></i>
-                    </div>
+                    {{- $thumbnail := .Resources.GetMatch "thumbnail.*" -}}
+                    {{- if $thumbnail -}}
+                      {{- $resized := $thumbnail.Resize "800x" -}}  <img src="{{ $resized.RelPermalink }}" alt="{{ .Title }}" />
+                    {{- else -}}
+                      <div class="image-placeholder">
+                          <i class="fas fa-brain"></i>
+                      </div>
+                    {{- end -}}
                 </div>
                 <div class="featured-content">
                     <div class="post-meta">
