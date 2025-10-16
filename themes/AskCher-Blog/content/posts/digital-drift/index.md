@@ -101,7 +101,7 @@ Developing strong digital discipline is one of the most important forms of prepa
  Active vs. Passive Screen Time
 
   * **[4.1]** Frontiers in Education: Short- and Long-Term Effects of Passive and Active Screen Time on Young Children's Phonological Memory
-      * URL: [https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2021.600687/full](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2021.600687/full)
+      * URL: [https://frontiersin.org](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2021.600687/full)
   * **[4.3]** The Voice Of Early Childhood: Active vs passive screen time: Understanding your child's digital diet
       * URL: [https://thevoiceofearlychildhood.com/active-vs-passive-screen-time-understanding-your-childs-digital-diet/](https://www.google.com/search?q=https://thevoiceofearlychildhood.com/active-vs-passive-screen-time-understanding-your-childs-digital-diet/)
   * **[4.4]** EdSurge News: The Surprising, Research-Backed Benefits of Active Screen Time

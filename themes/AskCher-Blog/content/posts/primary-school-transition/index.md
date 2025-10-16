@@ -1,8 +1,8 @@
 ---
 title: "P4, P5, and P6 Jumps: Planning for the Biggest Leaps in Primary School"
 date: 2025-10-05T00:00:00+08:00
-description: "Navigating Singapore's primary school system can feel overwhelming. This post offers practical, no-nonsense advice to help your child thrive."
-summary: "Navigating Singapore's primary school system can feel overwhelming. This post offers parents practical, no-nonsense advice to help your child thrive."
+description: "Here's a guide for parents through Singapore’s upper primary school transitions, emphasizing gradual academic growth, exam stamina, and emotional support. It provides actionable tips for Science, English, and Maths, and highlights fostering good habits and independence."
+summary: "Here's a guide for parents through Singapore’s upper primary school transitions, emphasizing gradual academic growth, exam stamina, and emotional support. It provides actionable tips for Science, English, and Maths, and highlights fostering good habits and independence."
 author: "Cheng Ren Teo"
 canonicalURL: []
 images: [] # Optional: Add a featured image path here
