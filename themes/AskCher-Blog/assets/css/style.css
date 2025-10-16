@@ -107,7 +107,6 @@ p {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    justify-content: center; 
 }
 
 .cta-primary:hover {
@@ -128,7 +127,6 @@ p {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    justify-content: center;
 }
 
 .cta-secondary:hover {

@@ -1,6 +1,6 @@
 /* ===== BLOG POST SPECIFIC STYLES ===== */
 /* Import the main stylesheet for base styles */
-/* @import url('style.css'); */
+@import url('style.css');
 
 /* ===== POST HEADER ===== */
 .post-header {
@@ -160,8 +160,6 @@
     font-size: 1.1rem;
     color: var(--askcher-dark);
 }
-
-
 
 /* Typography within post content */
 .post-content h1,
