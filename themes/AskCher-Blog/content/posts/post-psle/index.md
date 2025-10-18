@@ -13,10 +13,6 @@ layout: single
 thumbnail: "thumbnail.jpg"
 ---
  
-# Post-PSLE Reflections: A Tutor's Guide to 
-
-
-
 The transition from Primary 6 to Secondary 1 represents more than just a change of school—it's a fundamental shift in how your child will learn, grow, and develop their potential. While the natural focus right now is on school selection and PSLE scores, I believe this is the perfect time to step back and consider the bigger picture of your child's educational journey.
 
 ## Understanding the Secondary School Selection Landscape 
