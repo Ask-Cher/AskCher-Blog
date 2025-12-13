@@ -16,7 +16,6 @@ thumbnail: "thumbnail.jpg"
 ---
 
 If you find yourself saying, "My child can focus for hours on a game, but not for ten minutes on homework," you're not alone. Many parents observe a shrinking attention span in the face of academic tasks, often wondering if their child has a learning difficulty.
-If you find yourself saying, "My child can focus for hours on a game, but not for ten minutes on homework," you're not alone. Many parents observe a shrinking attention span in the face of academic tasks, often wondering if their child has a learning difficulty.
 
 While clinical issues like ADHD require professional assessment, the more common culprit in the digital age is **digital drift**: the brain's over-adaptation to fast-paced, high-reward digital content.
 
