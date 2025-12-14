@@ -53,7 +53,7 @@ The school is doing the heavy lifting during the day. Here is how you can suppor
 When your child gets home, don't let them dive straight into the phone. Encourage a "decompression period." Maybe it's a snack, a shower, or a quick chat about their day *before* they turn the phone back on. This extends that period of mental clarity they gained at school.
 
 #### 2. The "No-Phone Bedroom" Rule
-This is the hill I am willing to die on as a tutor. **Nothing kills academic performance like a phone in the bedroom at night.** The blue light disrupts sleep hormones (melatonin), and the temptation to scroll is too high. Buy a cheap alarm clock and charge the phones in the living room. Sleep is when memory consolidation happens—if they don't sleep well, they don't learn well.
+This is the one thing I stand strongly for. **Nothing kills academic performance like a phone in the bedroom at night.** The blue light disrupts sleep hormones (melatonin), and the temptation to scroll is too high. Buy a cheap alarm clock and charge the phones in the living room. Sleep is when memory consolidation happens—if they don't sleep well, they don't learn well.
 
 #### 3. Model the Behavior
 This is the hardest part. If we want our kids to be less dependent on phones, we have to show them how. If you are scrolling through emails during dinner, they will see the hypocrisy. Create "tech-free zones" in the house—like the dining table—where no one (not even you!) uses a phone.
@@ -73,8 +73,13 @@ This new initiative isn't a punishment; it's a reset button. It’s a chance for
 
 
 *Fun Fact - The Science (For your understanding)*
-*The adolescent brain develops back-to-front.*
-*1.  **The Amygdala/Limbic System (The Gas Pedal):** This part matures early. It governs emotions, rewards, and the "seek pleasure" drive. In teenagers, this is hypersensitive. They feel social rewards (likes, messages) much more intensely than adults.*
-*2.  **The Prefrontal Cortex (The Brakes):** This is the CEO of the brain. It handles impulse control, long-term planning, and understanding consequences. It doesn't finish developing until **age 25**. *
 
-* **The Smartphone Clash:** Social media algorithms are designed to trigger dopamine (reward). Because the teen's "Gas Pedal" is fully functional but their "Brakes" (PFC) are under construction, they literally **lack the hardware** to resist the urge to scroll.* *They are biologically outmatched by the device.*
+*The adolescent brain develops back-to-front.*
+
+*1.  **The Amygdala/Limbic System (The Gas Pedal)**: This part matures early. It governs emotions, rewards, and the "seek pleasure" drive. In teenagers, this is hypersensitive. They feel social rewards (likes, messages) much more intensely than adults.*
+
+*2
+
+*2.  **The Prefrontal Cortex (The Brakes):** This is the CEO of the brain. It handles impulse control, long-term planning, and understanding consequences. It doesn't finish developing until age 25.*
+
+*Social media algorithms are designed to trigger dopamine (reward). Because the teen's "Gas Pedal" is fully functional but their "Brakes" (PFC) are under construction, they literally lack the hardware to resist the urge to scroll. They are biologically outmatched by the device.*
