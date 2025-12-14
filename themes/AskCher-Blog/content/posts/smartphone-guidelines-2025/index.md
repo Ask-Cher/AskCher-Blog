@@ -78,8 +78,6 @@ This new initiative isn't a punishment; it's a reset button. It’s a chance for
 
 *1.  **The Amygdala/Limbic System (The Gas Pedal)**: This part matures early. It governs emotions, rewards, and the "seek pleasure" drive. In teenagers, this is hypersensitive. They feel social rewards (likes, messages) much more intensely than adults.*
 
-*2
-
 *2.  **The Prefrontal Cortex (The Brakes):** This is the CEO of the brain. It handles impulse control, long-term planning, and understanding consequences. It doesn't finish developing until age 25.*
 
 *Social media algorithms are designed to trigger dopamine (reward). Because the teen's "Gas Pedal" is fully functional but their "Brakes" (PFC) are under construction, they literally lack the hardware to resist the urge to scroll. They are biologically outmatched by the device.*
