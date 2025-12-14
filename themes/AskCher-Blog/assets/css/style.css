@@ -1117,6 +1117,45 @@ p {
     .mobile-menu-btn {
         display: block;
     }
+    .nav-menu.active {
+        display: flex; /* Override display: none; */
+        flex-direction: column;
+        position: absolute; /* Allows it to overlap content */
+        top: 65px; /* Adjust this value to sit right under your fixed header */
+        left: 0;
+        width: 100%;
+        background-color: var(--white); /* Ensures menu has a background */
+        box-shadow: var(--shadow-medium);
+        padding-bottom: 1rem;
+    }
+
+    .nav-menu .nav-item {
+        /* Makes each menu item take up the full width */
+        width: 100%; 
+        text-align: left;
+        padding: 0 2rem; 
+        /* Reset any desktop-specific positioning */
+        position: static; 
+    }
+    
+    .nav-menu .nav-link {
+        /* Ensures links are full width and look like mobile items */
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--border-gray);
+        transform: none; /* Remove desktop hover transform */
+    }
+
+    /* Fix the 'Stay Updated' button so it's a normal menu item */
+    .nav-menu .subscribe-btn {
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    
+    /* Hide the dropdown menu on mobile since it likely won't work well */
+    .nav-item .dropdown {
+        display: none;
+    }
 
     .hero-content h1 {
         font-size: 2.5rem;

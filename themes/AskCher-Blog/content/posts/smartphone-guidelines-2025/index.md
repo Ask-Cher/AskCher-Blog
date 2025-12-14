@@ -1,6 +1,6 @@
 ---
 title: "The Smartphone Ban: Why it's good, and how we can leverage this for our kids"
-date: 2025-01-15T00:00:00+08:00
+date: 2025-12-12T00:00:00+08:00
 thumbnail: "thumbnail.png"
 description: "Secondary schools in Singapore are clamping down on phone usage, and students aren't happy. But is this the best move for their grades and mental health? A local tutor breaks down the science behind the ban and offers parents practical tips on how to support this digital detox"
 summary: "Secondary schools in Singapore are clamping down on phone usage, and students aren't happy. But is this the best move for their grades and mental health? A local tutor breaks down the science behind the ban and offers parents practical tips on how to support this digital detox"

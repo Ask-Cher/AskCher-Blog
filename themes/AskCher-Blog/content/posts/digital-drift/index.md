@@ -1,8 +1,8 @@
-
 ---
 title: "Is Your Child's Attention Span 'Broken'? It Might Be Digital Drift, Not a Defect."
-date: 2025-12-12T00:00:00+08:00
-description: Our students' over-adaptation to fast-paced screen content trains the brain to demand immediate gratification and hinders the development of sustained focus. Learn research-backed strategies for parents to establish "digital discipline," such as active co-viewing and modeling healthy screen habits, to mitigate these cognitive effects.
+date: 2025-01-15T00:00:00+08:00
+thumbnail: "thumbnail.png"
+description: "Our students' over-adaptation to fast-paced screen content trains the brain to demand immediate gratification and hinders the development of sustained focus. Learn research-backed strategies for parents to establish digital discipline, such as active co-viewing and modeling healthy screen habits, to mitigate these cognitive effects."
 summary: Learn research-backed strategies for parents to establish "digital discipline," such as active co-viewing and modeling healthy screen habits, to mitigate these cognitive effects.
 author: "Cheng Ren Teo"
 canonicalURL: []
@@ -11,9 +11,9 @@ categories:
   - "For Parents"
 tags:
 layout: single
-resources:
-thumbnail: "thumbnail.jpg"
----
+--- 
+
+
 
 If you find yourself saying, "My child can focus for hours on a game, but not for ten minutes on homework," you're not alone. Many parents observe a shrinking attention span in the face of academic tasks, often wondering if their child has a learning difficulty.
 
