@@ -1,7 +1,7 @@
 
 ---
 title: "Is Your Child's Attention Span 'Broken'? It Might Be Digital Drift, Not a Defect."
-date: 2025-09-26T00:00:00+08:00
+date: 2025-12-12T00:00:00+08:00
 description: Our students' over-adaptation to fast-paced screen content trains the brain to demand immediate gratification and hinders the development of sustained focus. Learn research-backed strategies for parents to establish "digital discipline," such as active co-viewing and modeling healthy screen habits, to mitigate these cognitive effects.
 summary: Learn research-backed strategies for parents to establish "digital discipline," such as active co-viewing and modeling healthy screen habits, to mitigate these cognitive effects.
 author: "Cheng Ren Teo"
