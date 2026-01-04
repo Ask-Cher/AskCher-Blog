@@ -14,8 +14,6 @@ tags:
 layout: single
 ---
 
-### **Article Draft**
-
 # Stop "Mugging" Blindly: The Student's Guide to Spaced Repetition & Active Recall
 
 We've all been there.
