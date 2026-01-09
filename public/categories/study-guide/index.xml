@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Study-Guide on AskCher</title>
+    <link>http://localhost:1313/categories/study-guide/</link>
+    <description>Recent content in Study-Guide on AskCher</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/study-guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O-Level Results are out soon. Am I ready for JC? (Students Edition)</title>
+      <link>http://localhost:1313/posts/o-level-results-2026-jc-student/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/o-level-results-2026-jc-student/</guid>
+      <description>Got your L1R5? Looking to go to JC? In this post, we break down why your O-Level strategies are likely fatal in JC, what to expect, and why critical thinking matters more than memorization in the age of AI. Don&amp;rsquo;t pick your subjects until you read this.</description>
+    </item>
+  </channel>
+</rss>
