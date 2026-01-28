@@ -2,19 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ask-cher-blog.vercel.app/categories/</loc>
+    <lastmod>2026-01-27T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ask-cher-blog.vercel.app/categories/for-parents/</loc>
+    <lastmod>2026-01-27T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ask-cher-blog.vercel.app/posts/</loc>
+    <lastmod>2026-01-27T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ask-cher-blog.vercel.app/posts/sec-3-transition/</loc>
+    <lastmod>2026-01-27T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://ask-cher-blog.vercel.app/posts/singapore-ed-system/</loc>
     <lastmod>2026-01-16T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ask-cher-blog.vercel.app/categories/</loc>
-    <lastmod>2026-01-16T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://ask-cher-blog.vercel.app/categories/for-parents/</loc>
-    <lastmod>2026-01-16T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://ask-cher-blog.vercel.app/categories/study-guides/</loc>
-    <lastmod>2026-01-16T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://ask-cher-blog.vercel.app/posts/</loc>
     <lastmod>2026-01-16T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://ask-cher-blog.vercel.app/posts/is-jc-still-relevant/</loc>
